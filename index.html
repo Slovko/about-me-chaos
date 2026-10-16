@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="uk">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Про мене — Ярослав</title><link rel="stylesheet" href="styles.css?v=20261016windows"></head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Про мене — Ярослав</title><link rel="stylesheet" href="styles.css?v=20261016windows"><style>
+.section{margin:34px 0;padding:38px clamp(22px,4vw,52px);border:1px solid #3c4772;border-radius:28px;background:linear-gradient(145deg,rgba(18,23,41,.98),rgba(10,13,25,.98));box-shadow:0 20px 55px rgba(0,0,0,.3);position:relative;overflow:hidden}
+.section:before{content:'';position:absolute;left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,#a78bfa,#f472b6)}
+.section:nth-of-type(3){border-color:#594886;background:linear-gradient(145deg,#211b40,#111126)}
+.section:nth-of-type(4){border-color:#7b4562;background:linear-gradient(145deg,#32182f,#17101f)}
+.section:nth-of-type(5){border-color:#3c7180;background:linear-gradient(145deg,#122f3a,#101b29)}
+.section:hover{transform:translateY(-3px);transition:.25s;box-shadow:0 28px 70px rgba(0,0,0,.42)}
+body.chaos-mode .section{border:3px solid #160710;background:linear-gradient(145deg,#ffbf24ee,#e86b0bee);box-shadow:10px 12px 0 #160710}
+body.chaos-mode .section:before{background:#160710}
+</style></head>
 <body><header><a class="logo" href="#top">/ Ярослав</a><nav><a href="#about">Про мене</a><a href="#skills">Навички</a><a href="#goals">Цілі</a><a href="#contact">Контакти</a></nav></header>
 <main id="top"><section class="hero"><p class="eyebrow">STUDENT · WEB · AI</p><h1>Привіт, я <span>Ярослав</span>.<br>Створюю ідеї, які працюють.</h1><p class="lead">Студент ITSTEP, який вивчає веброзробку, JavaScript та штучний інтелект.</p><div class="actions"><a class="btn primary" href="#contact">Зв’язатися</a><button class="btn chaos" id="chaosToggle">Увімкнути Halloween-хаос 🎃</button></div></section>
 <section id="about" class="section"><p class="eyebrow">01 · ПРО МЕНЕ</p><h2>Цікавлюся технологіями<br>та створенням цифрових продуктів.</h2><p>Мені подобається перетворювати ідеї на зрозумілі сайти, прототипи й корисні інструменти. Постійно навчаюся, тестую нові підходи та перевіряю результат у браузері.</p></section>
