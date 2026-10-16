@@ -9,3 +9,26 @@ body.chaos-mode .chaos{background:#ff8a00;color:#210b00;box-shadow:0 0 22px rgba
 body.chaos-mode .section{border-color:#6d245f}
 body.chaos-mode .cards article,body.chaos-mode .goals li{border-color:#8b3b70;background:rgba(38,10,47,.82)}
 body.chaos-mode *{filter:hue-rotate(0deg)}
+
+
+/* Cinematic Halloween frame */
+body.chaos-mode{background:#f49a12;background-image:radial-gradient(circle at 50% 42%,#ffd84a 0,#ffb313 34%,#d85d0b 76%,#1a0615 100%);color:#1a0710}
+body.chaos-mode:before{content:'🎃';position:fixed;left:-30px;bottom:-35px;z-index:20;font-size:clamp(7rem,22vw,15rem);line-height:1;filter:none;transform:rotate(-8deg);text-shadow:8px 12px 0 #160710,0 0 35px #ff6a00;pointer-events:none}
+body.chaos-mode:after{content:'🕷️';position:fixed;right:4vw;top:16vh;z-index:20;font-size:clamp(4rem,10vw,8rem);filter:none;animation:spider-swing 2.8s ease-in-out infinite;pointer-events:none}
+body.chaos-mode header{background:linear-gradient(180deg,#160812e8,#381014c9);border-bottom:3px solid #160710;box-shadow:0 8px 24px #5c160999}
+body.chaos-mode header:before,body.chaos-mode header:after{content:'';position:absolute;top:-18px;width:45%;height:46px;background:#160710;clip-path:polygon(0 30%,12% 55%,24% 22%,38% 60%,52% 12%,65% 58%,81% 22%,100% 48%,100% 100%,0 100%);opacity:.95}
+body.chaos-mode header:before{left:0}body.chaos-mode header:after{right:0;transform:scaleX(-1)}
+body.chaos-mode .logo,body.chaos-mode nav a,body.chaos-mode .eyebrow{color:#160710}
+body.chaos-mode .hero{position:relative;isolation:isolate}
+body.chaos-mode .hero:before{content:'🕸️';position:absolute;right:8%;top:2%;z-index:-1;font-size:clamp(8rem,20vw,16rem);opacity:.28;filter:none;transform:rotate(18deg)}
+body.chaos-mode .hero:after{content:'☾';position:absolute;right:14%;top:10%;z-index:-2;color:#160710;font-size:clamp(8rem,25vw,20rem);line-height:1;opacity:.35}
+body.chaos-mode .hero h1,body.chaos-mode h2,body.chaos-mode h3,body.chaos-mode .lead,body.chaos-mode article p{color:#160710}
+body.chaos-mode .hero h1 span{color:#6f1634;text-shadow:2px 2px #ffcf3c}
+body.chaos-mode .section{border-color:#6f1634}
+body.chaos-mode .cards article,body.chaos-mode .goals li{background:#ffbd22dd;border:3px solid #160710;box-shadow:8px 8px 0 #160710}
+body.chaos-mode .cards article:nth-child(2){transform:rotate(-2deg)}body.chaos-mode .cards article:nth-child(3){transform:rotate(2deg)}
+body.chaos-mode .primary{background:#160710;color:#ffbd22}
+body.chaos-mode .chaos{background:#6f1634;color:#ffd84a;border:2px solid #160710;box-shadow:0 0 25px #16071088}
+body.chaos-mode footer{color:#160710;border-color:#160710}
+body.chaos-mode footer a{color:#160710}
+@keyframes spider-swing{0%,100%{transform:translateY(-10px) rotate(10deg)}50%{transform:translateY(18px) rotate(-8deg)}}
