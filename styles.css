@@ -48,3 +48,12 @@ body.chaos-mode footer a{color:#160710}
 body.chaos-mode .section{border:3px solid #160710;background:linear-gradient(145deg,#ffbf24ee,#e86b0bee);box-shadow:10px 12px 0 #160710}
 body.chaos-mode .section:before{background:#160710}
 body.chaos-mode .section:nth-of-type(2),body.chaos-mode .section:nth-of-type(3),body.chaos-mode .section:nth-of-type(4),body.chaos-mode .section:nth-of-type(5){background:linear-gradient(145deg,#ffbf24ee,#e86b0bee)}
+/* Module 5 experiment: CSS-only focus mode */
+#focusMode{position:fixed;left:-9999px}
+.focus-mode-label{position:fixed;right:22px;bottom:22px;z-index:35;padding:12px 16px;border:1px solid #5eead4;border-radius:999px;background:#172033;color:#f7f7fb;font-weight:800;cursor:pointer;box-shadow:0 8px 22px #0005}
+.focus-mode-label:before{content:'◯ '}
+body:has(#focusMode:checked) .art-stage,body:has(#focusMode:checked) .side-ads,body:has(#focusMode:checked) .ticker,body:has(#focusMode:checked) .halloween-party,body:has(#focusMode:checked) .chaos-spider{opacity:.18;filter:grayscale(1);transition:opacity .35s,filter .35s}
+body:has(#focusMode:checked) .hero{min-height:55vh}
+body:has(#focusMode:checked) .section{box-shadow:none}
+body:has(#focusMode:checked) .focus-mode-label{background:#5eead4;color:#172033}
+body:has(#focusMode:checked) .focus-mode-label:before{content:'● '}
